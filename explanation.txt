@@ -1,0 +1,6 @@
+1. create a project --> django-admin startproject projectname
+2. start server --> navigate inside the project and run python manage.py runserver
+3. create an app --> a project consist of modules which are called apps 
+    the application code will be stored in the apps
+    you can have multiple apps which have features of your project eg auth, booking etc 
+    command: python manage.py startapp 'app_name' -> python3 manage.py startapp listings
