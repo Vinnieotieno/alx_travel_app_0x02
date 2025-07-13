@@ -9,6 +9,8 @@ from rest_framework.response import Response
 from django.core.mail import send_mail
 from .models import Listing, Booking, Payment
 from .serializers import ListingSerializer, BookingSerializer, PaymentSerializer
+from .tasks import send_booking_confirmation_email
+
 
 CHAPA_SECRET_KEY = os.environ.get("CHAPA_SECRET_KEY")
 CHAPA_BASE_URL = "https://api.chapa.co/v1/transaction"
